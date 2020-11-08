@@ -19,7 +19,6 @@ if (orderPieces === null) {
     } else {
         message = `Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`;
     }
-}
 
 console.log(message);
 
