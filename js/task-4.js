@@ -1,20 +1,20 @@
-'use strict'
+// 'use strict'
 
-const credits = 23580;
-const pricePerDroid = 3000;
-const number = prompt('Please enter the number of droids');
+// const credits = 23580;
+// const pricePerDroid = 3000;
+// const number = prompt('Please enter the number of droids');
 
-const totalPrice = number * pricePerDroid;
+// const totalPrice = number * pricePerDroid;
 
-if (number === null) {
-    console.log('Отменено пользователем!');
-} else {
-    if (totalPrice > credits) {
-    console.log('Недостаточно средств на счету!');
-} else {
-    console.log(`Вы купили ${number} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
-}
-}
+// if (number === null) {
+//     console.log('Отменено пользователем!');
+// } else {
+//     if (totalPrice > credits) {
+//     console.log('Недостаточно средств на счету!');
+// } else {
+//     console.log(`Вы купили ${number} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
+// }
+// }
 
 
 
