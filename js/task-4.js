@@ -1,30 +1,27 @@
-// 'use strict'
+'use strict'
 
-// const credits = 23580;
-// const pricePerDroid = 3000;
-// const number = prompt('Please enter the number of droids');
+let orderPieces = prompt('Enter the number of droids');
 
-// const totalPrice = number * pricePerDroid;
+const credits = 23580;
+const pricePerDroid = 3000;
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const ACCESS_DENIED = 'Недостаточно средств на счету!';
 
-// if (number === null) {
-//     console.log('Отменено пользователем!');
-// } else {
-//     if (totalPrice > credits) {
-//     console.log('Недостаточно средств на счету!');
-// } else {
-//     console.log(`Вы купили ${number} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
-// }
-// }
+let totalPrice = orderPieces * pricePerDroid; 
+let balanceCredit = credits - totalPrice; 
+let message;
 
+if (orderPieces === null) {
+    message = CANCELED_BY_USER;
+} else {
+    if (totalPrice > credits) {
+        message = ACCESS_DENIED;
+    } else {
+        message = `Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`;
+    }
+}
 
-
-
-
-
-
-
-
-
+console.log(message);
 
 
 // Напиши скрипт который:
