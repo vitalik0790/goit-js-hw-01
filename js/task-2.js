@@ -1,14 +1,11 @@
 'use strict'
 
-const total = 100;
-let ordered = 50;
+const total = 100; 
+const ordered = 150;
 
+const message = ordered > total ? "На складе недостаточно товаров!" : "Заказ оформлен, с вами свяжется менеджер";
 
-if (ordered <= 100) {
-    console.log("Заказ оформлен, с вами свяжется менеджер");
-} else {
-    console.log("На складе недостаточно твоаров!");
-}
+console.log(message);
 
 
 
