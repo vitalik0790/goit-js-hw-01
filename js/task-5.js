@@ -10,31 +10,32 @@ const INDIA = 'Индия';
 const JAMAICA = 'Ямайка';
 let message;
 let price;
-let country = countryName.toLowerCase();
+let country;
 
 if (country === null) {
     message = CANCELED_BY_USER;
 
 } else {
+    country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase(); 
     switch (country) {
-        case 'китай':
+        case 'Китай':
             price = 100;
-      message = 'Доставка в Китай будет стоить 100 кредитов';
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
       break;
       
-        case 'австралия':
+        case 'Австралия':
            price = 170;
-      message = 'Доставка в Австралию будет стоить 170 кредитов';
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
       break;
       
-        case 'индия':
+        case 'Индия':
             price = 80;
-      message = 'Доставка в Индию будет стоить 80 кредитов';
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
       break;
       
-        case 'ямайка':
+        case 'Ямайка':
             price = 120;
-      message = 'Доставка на Ямайку будет стоить 120 кредитов';
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
       break;
       
         default:
